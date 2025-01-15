@@ -24,11 +24,12 @@ const Hälsning = () => {
     return (
         <>
         <form onSubmit={Submit}>
-        <h1>Skriv in ditt namn nedan</h1>
-        <input type="text" placeholder="Namn" value={namn} onChange={(e) => setName(e.target.value)} />
-        <button type="submit">✔</button>
+        <h1 className="enter-name">Skriv gärna in ditt namn nedan</h1>
+        <p className="arrow">⬇</p>
+        <input type="text" placeholder="Namn" value={namn} onChange={(e) => setName(e.target.value)} className="input-container" />
+        <button type="submit" className="check-button">✔</button>
         </form>
-        {hälsning && <h2>{hälsning}</h2>}
+        {hälsning && <h2 className="hälsning-tbx">{hälsning}</h2>}
         </>
 
     );

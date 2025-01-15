@@ -1,16 +1,16 @@
 
+
 import { Link } from "react-router-dom"
 
 const Home = () => {
 
     return(
         <>
-        <h1 className="välkommen">Välkommen!</h1>
+        <h1 className="välkommen">Hackathon</h1>
         <br />
-        <button>
-            <Link to="/hälsning">Gå vidare</Link>
+        <button className="submit-button" >
+            <Link to="/hälsning" className="button-text">Gå vidare</Link>
         </button>
-        <hr />
 
         </>
     );
